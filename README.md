@@ -49,7 +49,8 @@ Female<br />
 # Colour settings
 To modify colour settings the values sorted in the Colours C# file need to be modified.<br />
 
-The Colours C# file is located in CaveGame-master\UROS 1.12\Assets\_Utilities\Scripts folder (called "Colours.cs")<br />
+The Colours C# file is located in:<br />
+CaveGame-master\UROS 1.12\Assets\_Utilities\Scripts folder (called "Colours.cs")<br />
 
 Colours used in the game can be set for all colour blind settings and normal colour settings. Colours defined in this file will automatically be used during the game. The Unity colours used in this file are clearly named and should be easy to modify with any RGBA values.<br />
 
