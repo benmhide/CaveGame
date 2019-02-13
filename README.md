@@ -3,37 +3,41 @@ Procedurally generate cave adventure game created for the UROS project at Univer
 
 # Game features:
 -	Procedurally generated map / caves
-  -	Rock cubes – less juicy / fewer hits to destroy
-  -	Crystal cubes – More juicy more hits to destroy
+Rock cubes – less juicy / fewer hits to destroy
+Crystal cubes – More juicy more hits to destroy
+  
   
 -	Quest system feat. Four quests
-  -	Collect pickups (gold)
-  -	Search for keys to open chests to collect artefacts
-  -	Kill monsters
-  -	Exit the caves (complete game)
-  -	Hidden quest – Save/kill civilian (male/female/cat)
+Collect pickups (gold)
+Search for keys to open chests to collect artefacts
+Kill monsters
+Exit the caves (complete game)
+Hidden quest – Save/kill civilian (male/female/cat)
   
--	Selectable font sizes for in game text
+  
+Selectable font sizes for in game text
 
--	Selectable colour settings for game
-  -	Normal mode
-  -	Red colour blind mode
-  -	Green colour blind mode
-  -	Blue colour blind mode
+
+Selectable colour settings for game
+Normal mode
+Red colour blind mode
+Green colour blind mode
+Blue colour blind mode
+  
   
 -	Selectable character
-  -	Male
-  -	Female
+Male
+Female
   
 -	Two monster types
-  -	Basic monster (less juicy damaged effects and shrinks on death / no death particles)
-  -	Juicy monsters (increased juiciness when damaging / killing monster)
+Basic monster (less juicy damaged effects and shrinks on death / no death particles)
+Juicy monsters (increased juiciness when damaging / killing monster)
   
 -	Game and settings data collection via firebase. Collected data detailed below in firebase data section.
 
 -	Playable character has two actions
-  -	Digging through rock / crystal cubes – attacking monsters using pickaxe
-  -	Dropping TNT to destroy rock / crystal cubes – killing monsters
+Digging through rock / crystal cubes – attacking monsters using pickaxe
+Dropping TNT to destroy rock / crystal cubes – killing monsters
 
 # Firebase Data Collected
 
