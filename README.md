@@ -3,9 +3,9 @@ Procedurally generate cave adventure game created for the UROS project at Univer
 
 # Game features:
 -	Procedurally generated map / caves
-Rock cubes – less juicy / fewer hits to destroy
-Crystal cubes – More juicy more hits to destroy
-<br />
+Rock cubes – less juicy / fewer hits to destroy <br />
+Crystal cubes – More juicy more hits to destroy <br />
+
   
 -	Quest system feat. Four quests
 Collect pickups (gold)
