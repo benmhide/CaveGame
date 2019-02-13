@@ -46,7 +46,7 @@ Female<br />
 
 # Firebase Data Collected:
 
-- Global game data manager enums<br />
+# Global game data manager enums:
 1) enum GENDER { MALE = 0, FEMALE = 1 }
 2) enum CVDCOLOURSCHEME { RED = 0, GREEN = 1, BLUE = 2, NONE = 3 }
 3) enum FONTSIZE { SMALL = 0, MEDIUM = 1, LARGE = 2 }
@@ -54,9 +54,9 @@ Female<br />
 5) enum MONSTERTYPE { BASIC, JUICY }
 
 
-- Game stat classes
+# Game stat classes
 
-class ChestStat<br />
+- class ChestStat<br />
 {<br />
     float spawnTime;<br />
     float openedTime;<br />
@@ -64,7 +64,7 @@ class ChestStat<br />
     Vector3 position;<br />
 }<br /><br />
 
-class KeyStat<br />
+- class KeyStat<br />
 {<br />
     float spawnTime;<br />
     float collectedTime;<br />
@@ -72,7 +72,7 @@ class KeyStat<br />
     Vector3 position;<br />
 }<br /><br />
 
-class PickupStat<br />
+- class PickupStat<br />
 {<br />
     float spawnTime;<br />
     float collectedTime;<br />
@@ -80,7 +80,7 @@ class PickupStat<br />
     Vector3 position;<br />
 }<br /><br />
 
-class QuestStat<br />
+- class QuestStat<br />
 {<br />
     float startTime;<br />
     float endTime;<br />
@@ -88,7 +88,7 @@ class QuestStat<br />
     bool complete;<br />
 }<br /><br />
 
-class MonsterStat<br />
+- class MonsterStat<br />
 {<br />
     float spawnTime;<br />
     float killedTime;<br />
@@ -99,13 +99,13 @@ class MonsterStat<br />
     bool killedInQuest;<br />
 }<br /><br />
 
-class CubeStat<br />
+- class CubeStat<br />
 {<br />
     Vector3 position;<br />
     CUBETYPE type;<br />
 }<br /><br />
 
-class CubeDestroyedStat<br />
+- class CubeDestroyedStat<br />
 {<br />
     Vector3 position;<br />
     CUBETYPE type;<br />
@@ -113,7 +113,7 @@ class CubeDestroyedStat<br />
     float destroyedTime;<br />
 }<br />
 
-class CivillianStat<br />
+- class CivillianStat<br />
 {<br />
     Vector3 position;<br />
     CIVILLIANTYPE type;<br />
@@ -122,19 +122,21 @@ class CivillianStat<br />
      float savedKilledTime;<br />
 }<br /><br />
 
-class TNTStat<br />
+- class TNTStat<br />
 {<br />
     Vector3 position;<br />
     float usedTime;<br />
 }<br /><br />
 
-class HealthStat<br />
+- class HealthStat<br />
 {<br />
     float collectedTime;<br />
     float spawnTime;<br />
     bool collected;<br />
     Vector3 position;<br />
 }<br /><br />
+
+# Game statistics collected
 
 - Player settings / statistics
 playerName;<br />
