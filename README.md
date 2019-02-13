@@ -2,7 +2,7 @@
 Procedurally generate cave adventure game created for the UROS project at University of Lincoln.
 
 ## Game features:
--	88Procedurally generated map / caves88 <br />
+-	**Procedurally generated map / caves** <br />
 1) Rock cubes – less juicy / fewer hits to destroy <br />
 2) Crystal cubes – More juicy more hits to destroy <br />
 <br />
@@ -56,7 +56,8 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
 
 ## Game stat classes
 
-- **class ChestStat**<br />
+- **class ChestStat**
+<br />
 {<br />
     float spawnTime;<br />
     float openedTime;<br />
@@ -64,7 +65,8 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
     Vector3 position;<br />
 }<br /><br />
 
-- **class KeyStat**<br />
+- **class KeyStat**
+<br />
 {<br />
     float spawnTime;<br />
     float collectedTime;<br />
@@ -72,7 +74,8 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
     Vector3 position;<br />
 }<br /><br />
 
-- **class PickupStat**<br />
+- **class PickupStat**
+<br />
 {<br />
     float spawnTime;<br />
     float collectedTime;<br />
@@ -80,7 +83,8 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
     Vector3 position;<br />
 }<br /><br />
 
-- **class QuestStat**<br />
+- **class QuestStat**
+<br />
 {<br />
     float startTime;<br />
     float endTime;<br />
@@ -88,7 +92,8 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
     bool complete;<br />
 }<br /><br />
 
-- **class MonsterStat**<br />
+- **class MonsterStat**
+<br />
 {<br />
     float spawnTime;<br />
     float killedTime;<br />
@@ -99,13 +104,15 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
     bool killedInQuest;<br />
 }<br /><br />
 
-- **class CubeStat**<br />
+- **class CubeStat**
+<br />
 {<br />
     Vector3 position;<br />
     CUBETYPE type;<br />
 }<br /><br />
 
-- **class CubeDestroyedStat**<br />
+- **class CubeDestroyedStat**
+<br />
 {<br />
     Vector3 position;<br />
     CUBETYPE type;<br />
@@ -113,7 +120,8 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
     float destroyedTime;<br />
 }<br />
 
-- **class CivillianStat**<br />
+- **class CivillianStat**
+<br />
 {<br />
     Vector3 position;<br />
     CIVILLIANTYPE type;<br />
@@ -122,13 +130,15 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
      float savedKilledTime;<br />
 }<br /><br />
 
-- **class TNTStat**<br />
+- **class TNTStat**
+<br />
 {<br />
     Vector3 position;<br />
     float usedTime;<br />
 }<br /><br />
 
-- **class HealthStat**<br />
+- **class HealthStat**
+<br />
 {<br />
     float collectedTime;<br />
     float spawnTime;<br />
@@ -139,6 +149,7 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
 ## Game statistics collected
 
 - **Player settings / statistics**
+<br />
 playerName;<br />
 playerHealth;<br />
 playerScore; (end of game)<br />
@@ -149,11 +160,13 @@ List<TNTStat> playerTNTStatsList;<br />
 List<HealthStat> playerHealthPickupStatsList;<br />
 
 - **Accessability settings**
+<br />
 selectedFontSize;<br />
 selectedColourScheme;<br />
 selectedCVDColourScheme;<br />
 
 - **Grid cube counts**
+<br />
 numberOfTotalCubes;<br />
 numberOfRockCubes;<br />
 numberOfCrystalCubes;<br />
@@ -162,16 +175,19 @@ numberOfCubesDestroyedRock;<br />
 numberOfCubesDestroyedCrystal;<br />
 
 - **Pickup statistics**
+<br />
 pickupsTotal;<br />
 pickupsCollected;<br />
 
 - **Chests statistics**
+<br />
 chestsTotal;<br />
 chestsOpened;<br />
 keysTotal;<br />
 keysCollected;<br />
 
 - **Monster statistics**
+<br />
 monstersTotal;<br />
 monstersBasic;<br />
 monstersJuicy;<br />
@@ -180,26 +196,31 @@ monstersKilledBasic;<br />
 monstersKilledJuicy;<br />
 
 - **Game statistics**
+<br />
 string[] questNames;<br />
 questsNumber;<br />
 List<QuestStat> questStatsList;<br />
 questOldMinerPosition;<br />
 
 - **Civillian statistics**
+<br />
 civillianType;<br />
 civillianStats;<br />
 civillianPosition;<br />
 
 - **Cube positional statistics**
+<br />
 List<CubeDestroyedStat> cubePositionsDestroyed;<br />
 List<CubeStat> cubePositionsStart;<br />
 List<CubeStat> cubePositionsEnd;<br />
 
  - **Monster positional statistics**
+ <br />
 List<MonsterStat> monsterKilledStatsBasicList;<br />
 List<MonsterStat> monsterKilledStatsJuicyList;<br />
 
 - **Objective positional statistics**
+<br />
 List<PickupStat> listPickupStats;<br />
 List<ChestStat> listChestStats;<br />
 List<KeyStat> listKeyStats;<br />
@@ -209,7 +230,8 @@ List<KeyStat> listKeyStats;<br />
 To modify colour settings the values sorted in the Colours C# file need to be modified.<br />
 
 The Colours C# file is located in:<br />
-CaveGame-master\UROS 1.12\Assets\\_Utilities\Scripts folder (called "Colours.cs")<br />
+**CaveGame-master\UROS 1.12\Assets\\_Utilities\Scripts folder (called "Colours.cs")**
+<br />
 
 Colours used in the game can be set for all colour blind settings and normal colour settings. Colours defined in this file will automatically be used during the game. The Unity colours used in this file are clearly named and should be easy to modify with any RGBA values.<br />
 
