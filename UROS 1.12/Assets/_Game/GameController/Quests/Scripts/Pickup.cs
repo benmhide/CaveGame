@@ -34,7 +34,6 @@ public class Pickup : MonoBehaviour
         transform.rotation = rotation;
 
         // Assign reference
-        //questManager = QuestManager.instance;
         questManager = GameObject.FindGameObjectWithTag(Tags.gameControllerTag).GetComponent<QuestManager>();
     }
 

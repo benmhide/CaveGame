@@ -29,7 +29,7 @@ public class TNT : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag(Tags.playerTag);
-        sfx = GameObject.FindGameObjectWithTag(Tags.sfxsTag).GetComponent<AudioSource>();
+        sfx = GameObject.FindGameObjectWithTag(Tags.sfxsExtraTag).GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -94,17 +94,14 @@ public class TNT : MonoBehaviour
             // If monster exsists
             if (monster != null)
             {
-                // Get the monster controller
-                MonsterController monControl = monster.GetComponent<MonsterController>();
-
                 // If the monster is not dead, not null and player is digging/attacking
-                if (!monControl.monsterHealth.MonsterDead())
+                if (monster != null && !monster.GetComponent<MonsterController>().monsterHealth.MonsterDead())
                 {
                     // If health is greater than 0
-                    if (monControl.monsterHealth.CurrentHealth() > 0)
+                    if (monster != null && monster.GetComponent<MonsterController>().monsterHealth.CurrentHealth() > 0)
                     {
                         // Kill the monster
-                        monControl.monsterHealth.DamageMonster(monControl.monsterHealth.CurrentHealth());
+                       monster.GetComponent<MonsterController>().monsterHealth.DamageMonster(monster.GetComponent<MonsterController>().monsterHealth.CurrentHealth());
                     }
                 }
             }

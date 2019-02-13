@@ -51,9 +51,9 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(FadeMusicIn(music, musicFadeTime));
         currentSelectedGameObject.GetComponentInChildren<Text>().color = Color.yellow;
 
-        // Set the cursor
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //// Set the cursor
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

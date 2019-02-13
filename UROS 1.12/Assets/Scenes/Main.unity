@@ -253,11 +253,6 @@ PrefabInstance:
       propertyPath: questDisplay
       value: 
       objectReference: {fileID: 841778615}
-    - target: {fileID: 114052378955371154, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: pickup
-      value: 
-      objectReference: {fileID: 273, guid: 4485cdcdab243954aa29f57f2f348c22, type: 3}
     - target: {fileID: 114445267017664810, guid: f194a572b7ddc4344bad427b102308fc,
         type: 3}
       propertyPath: questText
@@ -283,61 +278,6 @@ PrefabInstance:
       propertyPath: playerPointsText
       value: 
       objectReference: {fileID: 1629363267}
-    - target: {fileID: 114597700400743810, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: caveShape2
-      value: 
-      objectReference: {fileID: 268, guid: fcc67532a27f07049b2025ef3bacf9c7, type: 3}
-    - target: {fileID: 114597700400743810, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: caveShape3
-      value: 
-      objectReference: {fileID: 266, guid: 5cf5b6a29042afd488edbed9f1e38139, type: 3}
-    - target: {fileID: 114597700400743810, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: crystalDamagedSystem
-      value: 
-      objectReference: {fileID: 463, guid: 2a42ebedf39336143852d411bf2c8764, type: 3}
-    - target: {fileID: 114597700400743810, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: rockDestroyedSystem
-      value: 
-      objectReference: {fileID: 469, guid: 939caf002f4c7a249bd607f6f520d476, type: 3}
-    - target: {fileID: 114597700400743810, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: crystalDestroyedSystem
-      value: 
-      objectReference: {fileID: 462, guid: 7de6ab1d1e7ddc54d88aa9bf9b39e37a, type: 3}
-    - target: {fileID: 114597700400743810, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: rockDamagedSystem
-      value: 
-      objectReference: {fileID: 464, guid: 6158550cd9213aa4f9180731d5cc0930, type: 3}
-    - target: {fileID: 114780976820877688, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: monsterHealth
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 82666097619357358, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 198d0fcca1bf10b438a20e5c89ed14d4, type: 3}
-    - target: {fileID: 82666097619357358, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: Priority
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 82666097619357358, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 82666097619357358, guid: f194a572b7ddc4344bad427b102308fc,
-        type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f194a572b7ddc4344bad427b102308fc, type: 3}
 --- !u!1001 &686594248
@@ -686,6 +626,26 @@ PrefabInstance:
     - target: {fileID: 4457920141546270, guid: 51336caa49479bc48ae2ecef91c3df0f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184109820255614, guid: 51336caa49479bc48ae2ecef91c3df0f,
+        type: 3}
+      propertyPath: selectedCVDColourScheme
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184109820255614, guid: 51336caa49479bc48ae2ecef91c3df0f,
+        type: 3}
+      propertyPath: selectedColourScheme
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114712791658998078, guid: 51336caa49479bc48ae2ecef91c3df0f,
+        type: 3}
+      propertyPath: settings.url
+      value: arcade-a85a0.firebaseio.com
+      objectReference: {fileID: 0}
+    - target: {fileID: 114712791658998078, guid: 51336caa49479bc48ae2ecef91c3df0f,
+        type: 3}
+      propertyPath: settings.apiKey
+      value: O2qgoTxUhEOrL9FE2aThj6cfe3GP0kIhr7gagXmc
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51336caa49479bc48ae2ecef91c3df0f, type: 3}

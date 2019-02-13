@@ -33,6 +33,8 @@ public class MonsterManager : MonoBehaviour
     public int monsterHealth;
     [Range(1, 20)]
     public float minMonsterToPlayerDistance;
+    public Color monsterColourBasic;
+    public Color monsterColourJuicy;
 
     [Header("Script references")]
     public Map map;
@@ -52,6 +54,9 @@ public class MonsterManager : MonoBehaviour
 
         // Clamp the min/max monster spawn settings
         ClampMinMaxValues();
+
+        // Set the colours
+        SetColours();
     }
 
     // Spawn monsters in random positions
@@ -68,6 +73,7 @@ public class MonsterManager : MonoBehaviour
 
             // Spawn in the basic monster
             SpawnMonster(basicMon, MONSTERTYPE.BASIC, monsterHealth);
+            basicMon.GetComponentInChildren<SpriteRenderer>().color = monsterColourBasic;
         }
 
         // Loop through all juicy monsters
@@ -78,9 +84,46 @@ public class MonsterManager : MonoBehaviour
 
             // Spawn in the basic monster
             SpawnMonster(juicyMon, MONSTERTYPE.JUICY, monsterHealth);
+            juicyMon.GetComponentInChildren<SpriteRenderer>().color = monsterColourJuicy;
         }
 
         Debug.Log("MONSTER - MONSTER INIT - COMPLETE");
+    }
+
+    // Set the colours
+    public void SetColours()
+    {
+        // Set colours CVD
+        if (GameDataManager.instance.SelectedColourScheme() == COLOURSCHEME.CVD)
+        {
+            // Red safe
+            if (GameDataManager.instance.SelectedCVDColourScheme() == CVDCOLOURSCHEME.RED)
+            {
+                monsterColourBasic = Colours.basicMonColourRedSafe;
+                monsterColourJuicy = Colours.juicyMonColourRedSafe;
+            }
+
+            // Green safe
+            if (GameDataManager.instance.SelectedCVDColourScheme() == CVDCOLOURSCHEME.GREEN)
+            {
+                monsterColourBasic = Colours.basicMonColourGreenSafe;
+                monsterColourJuicy = Colours.juicyMonColourGreenSafe;
+            }
+
+            // Blue safe
+            if (GameDataManager.instance.SelectedCVDColourScheme() == CVDCOLOURSCHEME.BLUE)
+            {
+                monsterColourBasic = Colours.basicMonColourBlueSafe;
+                monsterColourJuicy = Colours.juicyMonColourBlueSafe;
+            }
+        }
+
+        // Set colours Normal
+        else if (GameDataManager.instance.SelectedColourScheme() == COLOURSCHEME.NORMAL)
+        {
+            monsterColourBasic = Colours.basicMonColour;
+            monsterColourJuicy = Colours.juicyMonColour;
+        }
     }
 
     // Spawn in a monster
@@ -116,6 +159,7 @@ public class MonsterManager : MonoBehaviour
             // Instatiate the monsters and position in the map
             monster = Instantiate(basicMonster, Vector3.zero, Quaternion.identity, monsters.transform) as GameObject;
             type = MONSTERTYPE.BASIC;
+            monster.GetComponentInChildren<SpriteRenderer>().color = monsterColourBasic;
         }
 
         // Random monster - juicy monster
@@ -124,6 +168,7 @@ public class MonsterManager : MonoBehaviour
             // Instatiate the monsters and position in the map
             monster = Instantiate(juicyMonster, Vector3.zero, Quaternion.identity, monsters.transform) as GameObject;
             type = MONSTERTYPE.JUICY;
+            monster.GetComponentInChildren<SpriteRenderer>().color = monsterColourJuicy;
         }
 
         // Set initial position

@@ -13,6 +13,7 @@ public class PickupQuest : IQuest
     string questName = StaticStrings.pickupQuestName;
     string questText = StaticStrings.pickupQuestText;
     string questTextCompleted = StaticStrings.pickupQuestTextCompleted;
+    public Color pickupColor;
 
     // References
     public QuestManager questManager;
@@ -50,6 +51,9 @@ public class PickupQuest : IQuest
         // Set the game mode text
         hud.SetQuestProgressText(questManager.PickupsCollected() + "/" + questManager.TotalPickups());
         hud.SetQuestProgressItem(questManager.pickupSprite);
+
+        // Set the colours
+        SetColours();
     }
 
     // Pick up has been collected
@@ -79,6 +83,7 @@ public class PickupQuest : IQuest
         {
             // Instatiate the pickups and position in the map
             GameObject pickup = Object.Instantiate(pickupGO, Vector3.zero, Quaternion.identity, GameObject.FindGameObjectWithTag(Tags.objectiveTag).transform) as GameObject;
+            pickup.GetComponent<SpriteRenderer>().color = pickupColor;
 
             // Set initial position
             map.PositionGameObjectInEmptyCube(pickup);
@@ -95,6 +100,30 @@ public class PickupQuest : IQuest
             }
             pickup.GetComponent<Pickup>().Index(GameDataManager.instance.RecordPickupPosition(pickup.transform.position));
         }
+    }
+
+    // Set the colours
+    public void SetColours()
+    {
+        // Set colours CVD
+        if (GameDataManager.instance.SelectedColourScheme() == COLOURSCHEME.CVD)
+        {
+            // Red safe
+            if (GameDataManager.instance.SelectedCVDColourScheme() == CVDCOLOURSCHEME.RED)
+                pickupColor = Colours.pickUpColourRedSafe;
+
+            // Green safe
+            if (GameDataManager.instance.SelectedCVDColourScheme() == CVDCOLOURSCHEME.GREEN)
+                pickupColor = Colours.pickUpColourGreenSafe;
+
+            // Blue safe
+            if (GameDataManager.instance.SelectedCVDColourScheme() == CVDCOLOURSCHEME.BLUE)
+                pickupColor = Colours.pickUpColourBlueSafe;
+        }
+
+        // Set colours Normal
+        else if (GameDataManager.instance.SelectedColourScheme() == COLOURSCHEME.NORMAL)
+            pickupColor = Colours.pickUpColour;
     }
 
     //////////////////////////Set and Gets//////////////////////////

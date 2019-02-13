@@ -14,6 +14,7 @@ public class ChestQuest : IQuest
     string questName = StaticStrings.chestQuestName;
     string questText = StaticStrings.chestQuestText;
     string questTextCompleted = StaticStrings.chestQuestTextCompleted;
+    public Color[] chestKeyColours;
 
     // References
     public QuestManager questManager;
@@ -52,6 +53,10 @@ public class ChestQuest : IQuest
         // Set the quest text
         hud.SetQuestProgressText(questManager.ChestsOpened() + "/" + questManager.TotalChests());
         hud.SetQuestProgressItem(questManager.chestSprite);
+
+        // Set the colours
+        chestKeyColours = new Color[6];
+        SetColours();
     }
 
     // Chest has been opened
@@ -113,8 +118,8 @@ public class ChestQuest : IQuest
             chest.GetComponent<Chest>().SetKey(key);
 
             // Set colors
-            key.GetComponent<Key>().SetColour(Colours.chestKeyColours[i]);
-            chest.GetComponent<Chest>().SetColour(Colours.chestKeyColours[i]);
+            key.GetComponent<Key>().SetColour(chestKeyColours[i]);
+            chest.GetComponent<Chest>().SetColour(chestKeyColours[i]);
 
             // Set the key item
             key.GetComponent<Key>().SetHUDItem(i, questManager.keySprite, questManager.artefacts[i]);
@@ -140,7 +145,7 @@ public class ChestQuest : IQuest
         while (!keyPlaced)
         {
             // If the distance from key to chest is inbetween the max and min distance place the key
-            if (dist < questManager.maxKeyToChestDist /*+ 1 && dist > questManager.maxKeyToChestDist*/ && distToPlayer > questManager.minKeyToPlayerDist)
+            if (dist < questManager.maxKeyToChestDist && distToPlayer > questManager.minKeyToPlayerDist)
             {
                 // Place the key
                 keyPlaced = true;
@@ -162,6 +167,30 @@ public class ChestQuest : IQuest
 
         // Open the grid cube - empty cube
         cubeData.OpenGridCube();
+    }
+
+    // Set the colours
+    public void SetColours()
+    {
+        // Set colours CVD
+        if (GameDataManager.instance.SelectedColourScheme() == COLOURSCHEME.CVD)
+        {
+            // Red safe
+            if (GameDataManager.instance.SelectedCVDColourScheme() == CVDCOLOURSCHEME.RED)
+                for (int i = 0; i < chestKeyColours.Length; i++) chestKeyColours[i] = Colours.chestKeyColoursRedSafe[i];
+
+            // Green safe
+            if (GameDataManager.instance.SelectedCVDColourScheme() == CVDCOLOURSCHEME.GREEN)
+                for (int i = 0; i < chestKeyColours.Length; i++) chestKeyColours[i] = Colours.chestKeyColoursGreenSafe[i];
+
+            // Blue safe
+            if (GameDataManager.instance.SelectedCVDColourScheme() == CVDCOLOURSCHEME.BLUE)
+                for (int i = 0; i < chestKeyColours.Length; i++) chestKeyColours[i] = Colours.chestKeyColoursBlueSafe[i];
+        }
+
+        // Set colours Normal
+        else if (GameDataManager.instance.SelectedColourScheme() == COLOURSCHEME.NORMAL)
+            for (int i = 0; i < chestKeyColours.Length; i++) chestKeyColours[i] = Colours.chestKeyColours[i];
     }
 
     //////////////////////////Set and Gets//////////////////////////

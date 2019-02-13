@@ -303,6 +303,7 @@ Transform:
   - {fileID: 4590024410614426}
   - {fileID: 4354807404653872}
   - {fileID: 4567144133558898}
+  - {fileID: 4745020961546718824}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -349,8 +350,8 @@ MonoBehaviour:
   gridCube: {fileID: 1551685493665760, guid: 36bbb873a32af7949bc40926b46cbceb, type: 3}
   gridCubes: {fileID: 1497496723004010}
   caveShape1: {fileID: 1906241230342978, guid: fe22e64b88b0fc64dbb82b56219a1c6f, type: 3}
-  caveShape2: {fileID: 298, guid: 5cf5b6a29042afd488edbed9f1e38139, type: 3}
-  caveShape3: {fileID: 302, guid: fcc67532a27f07049b2025ef3bacf9c7, type: 3}
+  caveShape2: {fileID: 270, guid: fcc67532a27f07049b2025ef3bacf9c7, type: 3}
+  caveShape3: {fileID: 268, guid: 5cf5b6a29042afd488edbed9f1e38139, type: 3}
   numberOfCaves: 15
   minCaveSize: 2
   maxCaveSize: 6
@@ -374,9 +375,9 @@ MonoBehaviour:
     type: 2}
   crystalReallyDamagedMaterial: {fileID: 2100000, guid: 84ea62745a6cf08448ab82d520344a2a,
     type: 2}
-  rockDamagedSystem: {fileID: 467, guid: 6158550cd9213aa4f9180731d5cc0930, type: 3}
-  rockDestroyedSystem: {fileID: 475, guid: 939caf002f4c7a249bd607f6f520d476, type: 3}
-  crystalDamagedSystem: {fileID: 466, guid: 2a42ebedf39336143852d411bf2c8764, type: 3}
+  rockDamagedSystem: {fileID: 466, guid: 6158550cd9213aa4f9180731d5cc0930, type: 3}
+  rockDestroyedSystem: {fileID: 471, guid: 939caf002f4c7a249bd607f6f520d476, type: 3}
+  crystalDamagedSystem: {fileID: 465, guid: 2a42ebedf39336143852d411bf2c8764, type: 3}
   crystalDestroyedSystem: {fileID: 464, guid: 7de6ab1d1e7ddc54d88aa9bf9b39e37a, type: 3}
 --- !u!114 &114052378955371154
 MonoBehaviour:
@@ -409,7 +410,7 @@ MonoBehaviour:
   maxMonsters: 15
   totalMonsters: 0
   monstersKilled: 0
-  pickup: {fileID: 329, guid: 4485cdcdab243954aa29f57f2f348c22, type: 3}
+  pickup: {fileID: 275, guid: 4485cdcdab243954aa29f57f2f348c22, type: 3}
   key: {fileID: 1126291877487088, guid: 049ee1fa410342f41b83ae108f5b3dd4, type: 3}
   chest: {fileID: 1214296928690428, guid: 96f5b94dd0836c6459ddcb76078a154d, type: 3}
   oldMiner: {fileID: 1061264599104698, guid: 71443580def73a445a0b53b706f7235a, type: 3}
@@ -468,9 +469,12 @@ MonoBehaviour:
   maxBasicMonsters: 10
   minJuicyMonsters: 5
   maxJuicyMonsters: 10
-  monsterHealth: 3
+  monsterHealth: 2
   minMonsterToPlayerDistance: 10
+  monsterColourBasic: {r: 0, g: 0, b: 0, a: 0}
+  monsterColourJuicy: {r: 0, g: 0, b: 0, a: 0}
   map: {fileID: 0}
+  source: {fileID: 0}
 --- !u!82 &82666097619357358
 AudioSource:
   m_ObjectHideFlags: 0
@@ -481,15 +485,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 198d0fcca1bf10b438a20e5c89ed14d4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -732,6 +736,133 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996941073415816}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &7495624823514921905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4745020961546718824}
+  - component: {fileID: 7385173519292497442}
+  m_Layer: 0
+  m_Name: SFXsExtra
+  m_TagString: SFXsExtra
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4745020961546718824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7495624823514921905}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4274964299437718}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &7385173519292497442
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7495624823514921905}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}

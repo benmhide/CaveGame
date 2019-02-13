@@ -9,9 +9,7 @@ public class EndMenu : MonoBehaviour
     ///////////////////////////Variables////////////////////////////
 
     [Header("Script references")]
-    //public GameDataManager GameDataManager.instance;
     public LevelChanger levelChanger;
-    public Controls controls;
 
     [Header("Menu GameObjects")]
     public GameObject selectionIcons;
@@ -36,10 +34,6 @@ public class EndMenu : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //Assign the reference to the game data manager
-        GameDataManager.instance = GameDataManager.instance;
-        controls = Controls.instance;
-
         // Fade in music and highlight start button
         StartCoroutine(FadeMusicIn(music, musicFadeTime));
         currentSelectedGameObject.GetComponentInChildren<Text>().color = Color.yellow;

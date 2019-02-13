@@ -17,6 +17,7 @@ public static class Tags
     public static string itemsTag = "Items";
     public static string gameControllerTag = "GameController";
     public static string sfxsTag = "SFXs";
+    public static string sfxsExtraTag = "SFXsExtra";
     public static string oldMinerTag = "OldMiner";
     public static string mainCameraTag = "MainCamera";
     public static string levelChangerTag = "LevelChanger";
