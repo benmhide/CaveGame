@@ -44,6 +44,160 @@ Female<br />
 
 <br />
 # Firebase Data Collected
+/ Global game data manager enums
+public enum GENDER { MALE, FEMALE }
+public enum COLOURSCHEME { CVD, NORMAL }
+public enum CVDCOLOURSCHEME { RED, GREEN, BLUE, NONE }
+public enum FONTSIZE { SMALL, MEDIUM, LARGE }
+public enum CIVILLIANTYPE { MALE, FEMALE, CAT }
+
+// Game stat classes
+public class ChestStat
+{
+    public float spawnTime;
+    public float openedTime;
+    public bool opened;
+    public Vector3 position;
+}
+
+public class KeyStat
+{
+    public float spawnTime;
+    public float collectedTime;
+    public bool collected;
+    public Vector3 position;
+}
+
+public class PickupStat
+{
+    public float spawnTime;
+    public float collectedTime;
+    public bool collected;
+    public Vector3 position;
+}
+
+public class QuestStat
+{
+    public float startTime;
+    public float endTime;
+    public string name;
+    public bool complete;
+}
+
+public class MonsterStat
+{
+    public float spawnTime;
+    public float killedTime;
+    public Vector3 killedPos;
+    public Vector3 spawnedPos;
+    public MONSTERTYPE type;
+    public bool killed;
+    public bool killedInQuest;
+}
+
+public class CubeStat
+{
+    public Vector3 position;
+    public CUBETYPE type;
+}
+
+public class CubeDestroyedStat
+{
+    public Vector3 position;
+    public CUBETYPE type;
+    public bool destroyed;
+    public float destroyedTime;
+}
+
+public class CivillianStat
+{
+    public Vector3 position;
+    public CIVILLIANTYPE type;
+    public bool saved;
+    public bool killed;
+    public float savedKilledTime;
+}
+
+public class TNTStat
+{
+    public Vector3 position;
+    public float usedTime;
+}
+
+public class HealthStat
+{
+    public float collectedTime;
+    public float spawnTime;
+    public bool collected;
+    public Vector3 position;
+}
+
+public class GameDataManager 
+- Player settings / statistics
+playerName;
+playerHealth;
+playerScore;
+genderInitial;
+genderSelected;
+List<Vector3> playerPositionsList;
+List<TNTStat> playerTNTStatsList;
+List<HealthStat> playerHealthPickupStatsList;
+
+- Accessability settings
+selectedFontSize;
+selectedColourScheme;
+selectedCVDColourScheme;
+
+- Grid cube counts
+numberOfTotalCubes;
+numberOfRockCubes;
+numberOfCrystalCubes;
+numberOfCubesDestroyed;
+numberOfCubesDestroyedRock;
+numberOfCubesDestroyedCrystal;
+
+- Pickup statistics
+pickupsTotal;
+pickupsCollected;
+
+- Chests statistics
+chestsTotal;
+chestsOpened;
+keysTotal;
+keysCollected;
+
+- Monster statistics
+monstersTotal;
+monstersBasic;
+monstersJuicy;
+monstersKilledTotal;
+monstersKilledBasic;
+monstersKilledJuicy;
+
+- Game statistics
+string[] questNames;
+questsNumber;
+List<QuestStat> questStatsList;
+questOldMinerPosition;
+
+- Civillian statistics
+civillianType;
+civillianStats;
+civillianPosition;
+
+- Cube positional statistics
+List<CubeDestroyedStat> cubePositionsDestroyed;
+List<CubeStat> cubePositionsStart;
+List<CubeStat> cubePositionsEnd;
+
+ - Monster positional statistics
+List<MonsterStat> monsterKilledStatsBasicList;
+List<MonsterStat> monsterKilledStatsJuicyList;
+
+- Objective positional statistics
+List<PickupStat> listPickupStats;
+List<ChestStat> listChestStats;
+List<KeyStat> listKeyStats;
 <br />
 
 # Colour settings
