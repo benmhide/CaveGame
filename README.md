@@ -15,10 +15,10 @@ Crystal cubes – More juicy more hits to destroy <br />
 Hidden quest) Save/kill civilian (male/female/cat)<br />
 <br />  
   
-Selectable font sizes for in game text<br />
+- Selectable font sizes for in game text<br />
 <br />
 
-Selectable colour settings for game<br />
+- Selectable colour settings for game<br />
 1) Normal mode<br />
 2) Red colour blind mode<br />
 3) Green colour blind mode<br />
