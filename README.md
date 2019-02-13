@@ -51,7 +51,7 @@ public enum CVDCOLOURSCHEME { RED = 0, GREEN = 1, BLUE = 2, NONE = 3 }<br />
 public enum FONTSIZE { SMALL = 0, MEDIUM = 1, LARGE = 2 }<br />
 public enum CIVILLIANTYPE { MALE = 0, FEMALE = 1, CAT = 2 }<br />
 
-- Game stat classes<br />
+- Game stat classes<br /><br />
 public class ChestStat<br />
 {<br />
     public float spawnTime;<br />
@@ -76,128 +76,128 @@ public class PickupStat<br />
     public Vector3 position;<br />
 }<br /><br />
 
-public class QuestStat
-{
-    public float startTime;
-    public float endTime;
-    public string name;
-    public bool complete;
-}
+public class QuestStat<br />
+{<br />
+    public float startTime;<br />
+    public float endTime;<br />
+    public string name;<br />
+    public bool complete;<br />
+}<br /><br />
 
-public class MonsterStat
-{
-    public float spawnTime;
-    public float killedTime;
-    public Vector3 killedPos;
-    public Vector3 spawnedPos;
-    public MONSTERTYPE type;
-    public bool killed;
-    public bool killedInQuest;
-}
+public class MonsterStat<br />
+{<br />
+    public float spawnTime;<br />
+    public float killedTime;<br />
+    public Vector3 killedPos;<br />
+    public Vector3 spawnedPos;<br />
+    public MONSTERTYPE type;<br />
+    public bool killed;<br />
+    public bool killedInQuest;<br />
+}<br /><br />
 
-public class CubeStat
-{
-    public Vector3 position;
-    public CUBETYPE type;
-}
+public class CubeStat<br />
+{<br />
+    public Vector3 position;<br />
+    public CUBETYPE type;<br />
+}<br /><br />
 
-public class CubeDestroyedStat
-{
-    public Vector3 position;
-    public CUBETYPE type;
-    public bool destroyed;
-    public float destroyedTime;
-}
+public class CubeDestroyedStat<br />
+{<br />
+    public Vector3 position;<br />
+    public CUBETYPE type;<br />
+    public bool destroyed;<br />
+    public float destroyedTime;<br />
+}<br />
 
-public class CivillianStat
-{
-    public Vector3 position;
-    public CIVILLIANTYPE type;
-    public bool saved;
-    public bool killed;
-    public float savedKilledTime;
-}
+public class CivillianStat<br />
+{<br />
+    public Vector3 position;<br />
+    public CIVILLIANTYPE type;<br />
+    public bool saved;<br />
+    public bool killed;<br />
+    public float savedKilledTime;<br />
+}<br /><br />
 
-public class TNTStat
-{
-    public Vector3 position;
-    public float usedTime;
-}
+public class TNTStat<br />
+{<br />
+    public Vector3 position;<br />
+    public float usedTime;<br />
+}<br /><br />
 
-public class HealthStat
-{
-    public float collectedTime;
-    public float spawnTime;
-    public bool collected;
-    public Vector3 position;
-}
+public class HealthStat<br />
+{<br />
+    public float collectedTime;<br />
+    public float spawnTime;<br />
+    public bool collected;<br />
+    public Vector3 position;<br />
+}<br /><br />
 
 public class GameDataManager 
-- Player settings / statistics
-playerName;
-playerHealth;
-playerScore;
-genderInitial;
-genderSelected;
-List<Vector3> playerPositionsList;
-List<TNTStat> playerTNTStatsList;
-List<HealthStat> playerHealthPickupStatsList;
-
-- Accessability settings
-selectedFontSize;
-selectedColourScheme;
-selectedCVDColourScheme;
-
-- Grid cube counts
-numberOfTotalCubes;
-numberOfRockCubes;
-numberOfCrystalCubes;
-numberOfCubesDestroyed;
-numberOfCubesDestroyedRock;
-numberOfCubesDestroyedCrystal;
-
-- Pickup statistics
-pickupsTotal;
-pickupsCollected;
-
-- Chests statistics
-chestsTotal;
-chestsOpened;
-keysTotal;
-keysCollected;
-
-- Monster statistics
-monstersTotal;
-monstersBasic;
-monstersJuicy;
-monstersKilledTotal;
-monstersKilledBasic;
-monstersKilledJuicy;
-
-- Game statistics
-string[] questNames;
-questsNumber;
-List<QuestStat> questStatsList;
-questOldMinerPosition;
-
-- Civillian statistics
-civillianType;
-civillianStats;
-civillianPosition;
-
-- Cube positional statistics
-List<CubeDestroyedStat> cubePositionsDestroyed;
-List<CubeStat> cubePositionsStart;
-List<CubeStat> cubePositionsEnd;
-
- - Monster positional statistics
-List<MonsterStat> monsterKilledStatsBasicList;
-List<MonsterStat> monsterKilledStatsJuicyList;
-
-- Objective positional statistics
-List<PickupStat> listPickupStats;
-List<ChestStat> listChestStats;
-List<KeyStat> listKeyStats;
+- Player settings / statistics<br />
+playerName;<br />
+playerHealth;<br />
+playerScore;<br />
+genderInitial;<br />
+genderSelected;<br />
+List<Vector3> playerPositionsList;<br />
+List<TNTStat> playerTNTStatsList;<br />
+List<HealthStat> playerHealthPickupStatsList;<br />
+<br />
+- Accessability settings<br />
+selectedFontSize;<br />
+selectedColourScheme;<br />
+selectedCVDColourScheme;<br />
+<br />
+- Grid cube counts<br />
+numberOfTotalCubes;<br />
+numberOfRockCubes;<br />
+numberOfCrystalCubes;<br />
+numberOfCubesDestroyed;<br />
+numberOfCubesDestroyedRock;<br />
+numberOfCubesDestroyedCrystal;<br />
+<br />
+- Pickup statistics<br />
+pickupsTotal;<br />
+pickupsCollected;<br />
+<br />
+- Chests statistics<br />
+chestsTotal;<br />
+chestsOpened;<br />
+keysTotal;<br />
+keysCollected;<br />
+<br />
+- Monster statistics<br />
+monstersTotal;<br />
+monstersBasic;<br />
+monstersJuicy;<br />
+monstersKilledTotal;<br />
+monstersKilledBasic;<br />
+monstersKilledJuicy;<br />
+<br />
+- Game statistics<br />
+string[] questNames;<br />
+questsNumber;<br />
+List<QuestStat> questStatsList;<br />
+questOldMinerPosition;<br />
+<br />
+- Civillian statistics<br />
+civillianType;<br />
+civillianStats;<br />
+civillianPosition;<br />
+<br />
+- Cube positional statistics<br />
+List<CubeDestroyedStat> cubePositionsDestroyed;<br />
+List<CubeStat> cubePositionsStart;<br />
+List<CubeStat> cubePositionsEnd;<br />
+<br />
+ - Monster positional statistics<br />
+List<MonsterStat> monsterKilledStatsBasicList;<br />
+List<MonsterStat> monsterKilledStatsJuicyList;<br />
+<br />
+- Objective positional statistics<br />
+List<PickupStat> listPickupStats;<br />
+List<ChestStat> listChestStats;<br />
+List<KeyStat> listKeyStats;<br />
 <br />
 
 # Colour settings
