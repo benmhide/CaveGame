@@ -44,6 +44,7 @@ Female<br />
 
 <br />
 # Firebase Data Collected
+<br />
 
 # Colour settings
 To modify colour settings the values sorted in the Colours C# file need to be modified.
