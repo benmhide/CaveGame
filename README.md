@@ -51,7 +51,7 @@ Procedurally generate cave adventure game created for the UROS project at Univer
 2) **CVDCOLOURSCHEME** { RED = 0, GREEN = 1, BLUE = 2, NONE = 3 }
 3) **FONTSIZE** { SMALL = 0, MEDIUM = 1, LARGE = 2 }
 4) **CIVILLIANTYPE** { MALE = 0, FEMALE = 1, CAT = 2 }
-5) **MONSTERTYPE** { BASIC, JUICY }
+5) **MONSTERTYPE** { BASIC = 0, JUICY = 1 }
 
 
 ## Game stat classes
