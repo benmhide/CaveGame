@@ -64,9 +64,13 @@ public class OldMiner : MonoBehaviour
             // If current quest completed
             else if (questManager.CurrentQuestCompleted())
             {
+                Debug.Log("OLD MINER POSITIONED - QUEST INIT - STARTED");
+
                 questManager.ChestQuestCompleted();
                 questManager.InitQuest(10);
                 other.gameObject.GetComponent<PlayerController>().AddTNT();
+
+                Debug.Log("OLD MINER POSITIONED - QUEST INIT - COMPLETE");
             }
 
             // If current quest not complete

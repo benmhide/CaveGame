@@ -630,12 +630,12 @@ PrefabInstance:
     - target: {fileID: 114184109820255614, guid: 51336caa49479bc48ae2ecef91c3df0f,
         type: 3}
       propertyPath: selectedCVDColourScheme
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114184109820255614, guid: 51336caa49479bc48ae2ecef91c3df0f,
         type: 3}
       propertyPath: selectedColourScheme
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114712791658998078, guid: 51336caa49479bc48ae2ecef91c3df0f,
         type: 3}

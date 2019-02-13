@@ -393,13 +393,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfQuests: 0
   questIndex: -1
-  minPickupPlayerDist: 20
+  minPickupPlayerDist: 10
   minPickups: 5
-  maxPickups: 20
+  maxPickups: 10
   totalPickups: 0
   pickupsCollected: 0
   maxKeyToChestDist: 20
-  minKeyToPlayerDist: 5
+  minKeyToPlayerDist: 3
   minChests: 1
   maxChests: 6
   totalChestsKeys: 0
@@ -407,7 +407,7 @@ MonoBehaviour:
   keysCollected: 0
   minPlayerToCivillianDist: 20
   minMonsters: 5
-  maxMonsters: 15
+  maxMonsters: 10
   totalMonsters: 0
   monstersKilled: 0
   pickup: {fileID: 275, guid: 4485cdcdab243954aa29f57f2f348c22, type: 3}

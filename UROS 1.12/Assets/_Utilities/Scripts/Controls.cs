@@ -15,6 +15,7 @@ public class Controls : MonoBehaviour
     public bool down;
     public bool left;
     public bool right;
+    public bool enter;
     public float idleTimer;
     public float idleTime = 30.0f;
 
@@ -39,6 +40,7 @@ public class Controls : MonoBehaviour
     {
         // Set the player controls
         diggingAttacking = Input.GetKeyDown(ArcadeKeymap.player1.A.key);
+        enter = Input.GetKeyDown(ArcadeKeymap.player1.A.key);
         dropTNT = Input.GetKeyDown(ArcadeKeymap.player1.B.key);
         otherAction = Input.GetKeyDown(ArcadeKeymap.player1.C.key);
 

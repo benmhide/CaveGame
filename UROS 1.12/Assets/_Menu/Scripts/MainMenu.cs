@@ -51,9 +51,9 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(FadeMusicIn(music, musicFadeTime));
         currentSelectedGameObject.GetComponentInChildren<Text>().color = Color.yellow;
 
-        //// Set the cursor
-        //Cursor.visible = false;
-        //Cursor.lockState = CursorLockMode.Locked;
+        // Set the cursor
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -80,6 +80,22 @@ public class MainMenu : MonoBehaviour
             // Colour the character sprites (female highlighted - male grayed out)
             male.transform.GetChild(0).GetComponentInChildren<Image>().color = Color.gray;
             female.transform.GetChild(0).GetComponentInChildren<Image>().color = Color.white;
+        }
+
+        // Move input fields
+        if (EventSystem.current.currentSelectedGameObject == nameInputField1 && controls.enter)
+            SelectInput("NameInputField2");
+
+        // Move input fields
+        if (EventSystem.current.currentSelectedGameObject == nameInputField2 && controls.enter)
+            SelectInput("NameInputField3");
+
+        // Move to play button
+        if (EventSystem.current.currentSelectedGameObject == nameInputField3 && controls.enter)
+        {
+            SelectedName();
+            SelectButton("PlayButton");
+            soundFx.PlayOneShot(menuBeep);
         }
 
         // Update selection
