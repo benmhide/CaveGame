@@ -2,17 +2,17 @@
 Procedurally generate cave adventure game created for the UROS project at University of Lincoln.
 
 # Game features:
--	Procedurally generated map / caves
+-	Procedurally generated map / caves <br />
 Rock cubes – less juicy / fewer hits to destroy <br />
 Crystal cubes – More juicy more hits to destroy <br />
 
   
--	Quest system feat. Four quests
-Collect pickups (gold)
-Search for keys to open chests to collect artefacts
-Kill monsters
-Exit the caves (complete game)
-Hidden quest – Save/kill civilian (male/female/cat)
+-	Quest system feat. Four quests <br />
+Collect pickups (gold)<br />
+Search for keys to open chests to collect artefacts<br />
+Kill monsters<br />
+Exit the caves (complete game)<br />
+Hidden quest – Save/kill civilian (male/female/cat)<br />
   
   
 Selectable font sizes for in game text
