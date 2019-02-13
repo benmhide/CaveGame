@@ -221,11 +221,13 @@ Colours used in the game can be set for all colour blind settings and normal col
   - floorColourGreenSafe = new Color(204.0f / 255.0f, 204.0f / 255.0f, 204.0f / 255.0f);
   - floorColourBlueSafe = new Color(204.0f / 255.0f, 204.0f / 255.0f, 204.0f / 255.0f); 
 
+
 - EDGE COLOURS (**SET NORMAL COLOUR**)
   - edgeColour = new Color(48.0f / 255.0f, 48.0f / 255.0f, 48.0f / 255.0f); 
   - edgeColourRedSafe = new Color(48.0f / 255.0f, 48.0f / 255.0f, 48.0f / 255.0f);
   - edgeColourGreenSafe = new Color(45.0f / 255.0f, 31.0f / 255.0f, 0.0f / 255.0f);
   - edgeColourBlueSafe = new Color(45.0f / 255.0f, 31.0f / 255.0f, 0.0f / 255.0f); 
+
 
 - BORDER COLOURS (**COPIED FROM ABOVE**)
   - borderColour = new Color(edgeColour.r, edgeColour.g, edgeColour.b); 
@@ -233,11 +235,13 @@ Colours used in the game can be set for all colour blind settings and normal col
   - borderColourGreenSafe = new Color(edgeColourGreenSafe.r, edgeColourGreenSafe.g, edgeColourGreenSafe.b);
   - borderColourBlueSafe = new Color(edgeColourBlueSafe.r, edgeColourBlueSafe.g, edgeColourBlueSafe.b);
 
+
 - ROCK COLOURS (**SET NORMAL COLOUR**)
   - rockColour = new Color(117.0f / 255.0f, 95.0f / 255.0f, 43.0f / 255.0f); 
   - rockColourRedSafe = new Color(117.0f / 255.0f, 95.0f / 255.0f, 43.0f / 255.0f);
   - rockColourGreenSafe = new Color(61.0f / 255.0f, 61.0f / 255.0f, 61.0f / 255.0f);
   - rockColourBlueSafe = new Color(61.0f / 255.0f, 61.0f / 255.0f, 61.0f / 255.0f);
+
 
 - ROCK DAMAGED COLOURS (**SET NORMAL COLOUR**)
   - rockDamagedColour = new Color(181.0f / 255.0f, 151.0f / 255.0f, 83.0f / 255.0f); 
@@ -245,11 +249,6 @@ Colours used in the game can be set for all colour blind settings and normal col
   - rockDamagedColourGreenSafe = new Color(132.0f / 255.0f, 132.0f / 255.0f, 132.0f / 255.0f);
   - rockDamagedColourBlueSafe = new Color(132.0f / 255.0f, 132.0f / 255.0f, 132.0f / 255.0f); //
 
-- ROCK DAMAGED PARTICLE SYSTEM COLOURS (**COPIED FROM ABOVE**)
-  - rockDamagedPSColour = new Color(rockColour.r, rockColour.g, rockColour.b); 
-  - rockDamagedPSColourRedSafe = new Color(rockColourRedSafe.r, rockColourRedSafe.g, rockColourRedSafe.b);
-  - rockDamagedPSColourGreenSafe = new Color(rockColourGreenSafe.r, rockColourGreenSafe.g, rockColourGreenSafe.b);
-  - rockDamagedPSColourBlueSafe = new Color(rockColourBlueSafe.r, rockColourBlueSafe.g, rockColourBlueSafe.b);
 
 - CRYSTAL COLOURS (**SET NORMAL COLOUR**)
   - crystalColour = new Color(0.0f / 255.0f, 255.0f / 255.0f, 229.0f / 255.0f); 
@@ -257,17 +256,12 @@ Colours used in the game can be set for all colour blind settings and normal col
   - crystalColourGreenSafe = new Color(191.0f / 255.0f, 0.0f / 255.0f, 255.0f / 255.0f);
   - crystalColourBlueSafe = new Color(191.0f / 255.0f, 0.0f / 255.0f, 255.0f / 255.0f); //
 
-- CRYSTAL DAMGED PARTICLE SYSTEM COLOURS (**COPIED FROM ABOVE**)
-  - crystalDamagedPSColour = new Color(crystalColour.r, crystalColour.g, crystalColour.b); 
-  - crystalDamagedPSColourRedSafe = new Color(crystalColourRedSafe.r, crystalColourRedSafe.g, crystalColourRedSafe.b);
-  - crystalDamagedPSColourGreenSafe = new Color(crystalColourGreenSafe.r, crystalColourGreenSafe.g, crystalColourGreenSafe.b);
-  - crystalDamagedPSColourBlueSafe = new Color(crystalColourBlueSafe.r, crystalColourBlueSafe.g, crystalColourBlueSafe.b);
-
 - PICK UP COLOURS (**SET NORMAL COLOUR**)
   - pickUpColour = new Color(255.0f / 255.0f, 215.0f / 255.0f, 0.0f / 255.0f); 
   - pickUpColourRedSafe = new Color(255.0f / 255.0f, 215.0f / 255.0f, 0.0f / 255.0f);
   - pickUpColourGreenSafe = new Color(218.0f / 255.0f, 165.0f / 255.0f, 32.0f / 255.0f);
   - pickUpColourBlueSafe = new Color(218.0f / 255.0f, 165.0f / 255.0f, 32.0f / 255.0f); //
+
 
 - BASIC MONSTER COLOURS (**SET NORMAL COLOUR**)
   - basicMonColour = new Color(226.0f / 255.0f, 0.0f / 255.0f, 0.0f / 255.0f); 
@@ -275,11 +269,13 @@ Colours used in the game can be set for all colour blind settings and normal col
   - basicMonColourGreenSafe = new Color(87.0f / 255.0f, 155.0f / 255.0f, 0.0f / 255.0f);
   - basicMonColourBlueSafe = new Color(87.0f / 255.0f, 155.0f / 255.0f, 0.0f / 255.0f); //
 
+
 - JUICY MONSTER COLOURS (**SET NORMAL COLOUR**)
   - juicyMonColour = new Color(87.0f / 255.0f, 155.0f / 255.0f, 0.0f / 255.0f);
   - juicyMonColourRedSafe = new Color(87.0f / 255.0f, 155.0f / 255.0f, 0.0f / 255.0f);
   - juicyMonColourGreenSafe = new Color(226.0f / 255.0f, 0.0f / 255.0f, 0.0f / 255.0f);
   - juicyMonColourBlueSafe = new Color(226.0f / 255.0f, 0.0f / 255.0f, 0.0f / 255.0f); //
+
 
 - Chest and key colours (**SET NORMAL COLOUR**)
   - chestKeyColours = new Color[] { Color.red, Color.green, Color.blue, Color.yellow, Color.magenta, Color.cyan }; 
@@ -287,11 +283,13 @@ Colours used in the game can be set for all colour blind settings and normal col
   - chestKeyColoursGreenSafe = new Color[] { Color.red, Color.green, Color.blue, Color.yellow, Color.magenta, Color.cyan }; //
   - chestKeyColoursBlueSafe = new Color[] { Color.red, Color.green, Color.blue, Color.yellow, Color.magenta, Color.cyan }; //
 
+
 - UI COLOURS (**SET NORMAL COLOUR**)
   - UITextColour = new Color(255.0f / 255.0f, 254.0f / 255.0f, 239.0f / 255.0f); 
   - UITextColourRedSafe = new Color(255.0f / 255.0f, 254.0f / 255.0f, 239.0f / 255.0f);
   - UITextColourGreenSafe = new Color(255.0f / 255.0f, 188.0f / 255.0f, 204.0f / 255.0f);
   - UITextColourBlueSafe = new Color(255.0f / 255.0f, 188.0f / 255.0f, 204.0f / 255.0f); //
+
 
 - UI BACKGROUND COLOURS (**SET NORMAL COLOUR**)
   - UIBackgroundColour = new Color(33.0f / 255.0f, 22.0f / 255.0f, 0.0f / 255.0f); 
