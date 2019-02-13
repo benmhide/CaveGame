@@ -3,8 +3,8 @@ Procedurally generate cave adventure game created for the UROS project at Univer
 
 # Game features:
 -	Procedurally generated map / caves <br />
-Rock cubes – less juicy / fewer hits to destroy <br />
-Crystal cubes – More juicy more hits to destroy <br />
+1) Rock cubes – less juicy / fewer hits to destroy <br />
+2) Crystal cubes – More juicy more hits to destroy <br />
 <br />
   
 -	Quest system feat. Four quests <br />
@@ -44,37 +44,37 @@ Female<br />
 
 <br />
 # Firebase Data Collected
-/ Global game data manager enums
-public enum GENDER { MALE, FEMALE }
-public enum COLOURSCHEME { CVD, NORMAL }
-public enum CVDCOLOURSCHEME { RED, GREEN, BLUE, NONE }
-public enum FONTSIZE { SMALL, MEDIUM, LARGE }
-public enum CIVILLIANTYPE { MALE, FEMALE, CAT }
+- Global game data manager enums<br />
+enum GENDER { MALE = 0, FEMALE = 1 }<br />
+public enum COLOURSCHEME { CVD = 0, NORMAL = 1 }<br />
+public enum CVDCOLOURSCHEME { RED = 0, GREEN = 1, BLUE = 2, NONE = 3 }<br />
+public enum FONTSIZE { SMALL = 0, MEDIUM = 1, LARGE = 2 }<br />
+public enum CIVILLIANTYPE { MALE = 0, FEMALE = 1, CAT = 2 }<br />
 
-// Game stat classes
-public class ChestStat
-{
-    public float spawnTime;
-    public float openedTime;
-    public bool opened;
-    public Vector3 position;
-}
+- Game stat classes<br />
+public class ChestStat<br />
+{<br />
+    public float spawnTime;<br />
+    public float openedTime;<br />
+    public bool opened;<br />
+    public Vector3 position;<br />
+}<br /><br />
 
-public class KeyStat
-{
-    public float spawnTime;
-    public float collectedTime;
-    public bool collected;
-    public Vector3 position;
-}
+public class KeyStat<br />
+{<br />
+    public float spawnTime;<br />
+    public float collectedTime;<br />
+    public bool collected;<br />
+    public Vector3 position;<br />
+}<br /><br />
 
-public class PickupStat
-{
-    public float spawnTime;
-    public float collectedTime;
-    public bool collected;
-    public Vector3 position;
-}
+public class PickupStat<br />
+{<br />
+    public float spawnTime;<br />
+    public float collectedTime;<br />
+    public bool collected;<br />
+    public Vector3 position;<br />
+}<br /><br />
 
 public class QuestStat
 {
