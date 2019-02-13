@@ -8,37 +8,41 @@ Crystal cubes – More juicy more hits to destroy <br />
 
   
 -	Quest system feat. Four quests <br />
-Collect pickups (gold)<br />
-Search for keys to open chests to collect artefacts<br />
-Kill monsters<br />
-Exit the caves (complete game)<br />
-Hidden quest – Save/kill civilian (male/female/cat)<br />
+1) Collect pickups (gold)<br />
+2) Search for keys to open chests to collect artefacts<br />
+3) Kill monsters<br />
+4) Exit the caves (complete game)<br />
+Hidden quest) Save/kill civilian (male/female/cat)<br />
+<br />  
   
-  
-Selectable font sizes for in game text
+Selectable font sizes for in game text<br />
+<br />
 
+Selectable colour settings for game<br />
+1) Normal mode<br />
+2) Red colour blind mode<br />
+3) Green colour blind mode<br />
+4) Blue colour blind mode<br />
+  <br />
+  
+-	Selectable character<br />
+Male<br />
+Female<br />
+<br />
 
-Selectable colour settings for game
-Normal mode
-Red colour blind mode
-Green colour blind mode
-Blue colour blind mode
+-	Two monster types<br />
+1) Basic monster (less juicy damaged effects and shrinks on death / no death particles)<br />
+2) Juicy monsters (increased juiciness when damaging / killing monster)<br />
+  <br />
   
-  
--	Selectable character
-Male
-Female
-  
--	Two monster types
-Basic monster (less juicy damaged effects and shrinks on death / no death particles)
-Juicy monsters (increased juiciness when damaging / killing monster)
-  
--	Game and settings data collection via firebase. Collected data detailed below in firebase data section.
+-	Game and settings data collection via firebase. Collected data detailed below in firebase data section.<br />
+<br />
 
--	Playable character has two actions
-Digging through rock / crystal cubes – attacking monsters using pickaxe
-Dropping TNT to destroy rock / crystal cubes – killing monsters
+-	Playable character has two actions<br />
+1) Digging through rock / crystal cubes – attacking monsters using pickaxe<br />
+2) Dropping TNT to destroy rock / crystal cubes – killing monsters<br />
 
+<br />
 # Firebase Data Collected
 
 # Colour settings
