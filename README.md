@@ -43,96 +43,96 @@ Female<br />
 2) Dropping TNT to destroy rock / crystal cubes – killing monsters<br />
 
 <br />
-# Firebase Data Collected
+# Firebase Data Collected:
+<br />
 - Global game data manager enums<br />
 enum GENDER { MALE = 0, FEMALE = 1 }<br />
-public enum COLOURSCHEME { CVD = 0, NORMAL = 1 }<br />
-public enum CVDCOLOURSCHEME { RED = 0, GREEN = 1, BLUE = 2, NONE = 3 }<br />
-public enum FONTSIZE { SMALL = 0, MEDIUM = 1, LARGE = 2 }<br />
-public enum CIVILLIANTYPE { MALE = 0, FEMALE = 1, CAT = 2 }<br />
+enum CVDCOLOURSCHEME { RED = 0, GREEN = 1, BLUE = 2, NONE = 3 }<br />
+enum FONTSIZE { SMALL = 0, MEDIUM = 1, LARGE = 2 }<br />
+enum CIVILLIANTYPE { MALE = 0, FEMALE = 1, CAT = 2 }<br />
 
 - Game stat classes<br /><br />
-public class ChestStat<br />
+class ChestStat<br />
 {<br />
-    public float spawnTime;<br />
-    public float openedTime;<br />
-    public bool opened;<br />
-    public Vector3 position;<br />
+    float spawnTime;<br />
+    float openedTime;<br />
+    bool opened;<br />
+    Vector3 position;<br />
 }<br /><br />
 
-public class KeyStat<br />
+class KeyStat<br />
 {<br />
-    public float spawnTime;<br />
-    public float collectedTime;<br />
-    public bool collected;<br />
-    public Vector3 position;<br />
+    float spawnTime;<br />
+    float collectedTime;<br />
+    bool collected;<br />
+    Vector3 position;<br />
 }<br /><br />
 
-public class PickupStat<br />
+class PickupStat<br />
 {<br />
-    public float spawnTime;<br />
-    public float collectedTime;<br />
-    public bool collected;<br />
-    public Vector3 position;<br />
+    float spawnTime;<br />
+    float collectedTime;<br />
+    bool collected;<br />
+    Vector3 position;<br />
 }<br /><br />
 
-public class QuestStat<br />
+class QuestStat<br />
 {<br />
-    public float startTime;<br />
-    public float endTime;<br />
-    public string name;<br />
-    public bool complete;<br />
+    float startTime;<br />
+    float endTime;<br />
+    string name;<br />
+    bool complete;<br />
 }<br /><br />
 
-public class MonsterStat<br />
+class MonsterStat<br />
 {<br />
-    public float spawnTime;<br />
-    public float killedTime;<br />
-    public Vector3 killedPos;<br />
-    public Vector3 spawnedPos;<br />
-    public MONSTERTYPE type;<br />
-    public bool killed;<br />
-    public bool killedInQuest;<br />
+    float spawnTime;<br />
+    float killedTime;<br />
+    Vector3 killedPos;<br />
+    Vector3 spawnedPos;<br />
+    MONSTERTYPE type;<br />
+    bool killed;<br />
+    bool killedInQuest;<br />
 }<br /><br />
 
-public class CubeStat<br />
+class CubeStat<br />
 {<br />
-    public Vector3 position;<br />
-    public CUBETYPE type;<br />
+    Vector3 position;<br />
+    CUBETYPE type;<br />
 }<br /><br />
 
-public class CubeDestroyedStat<br />
+class CubeDestroyedStat<br />
 {<br />
-    public Vector3 position;<br />
-    public CUBETYPE type;<br />
-    public bool destroyed;<br />
-    public float destroyedTime;<br />
+    Vector3 position;<br />
+    CUBETYPE type;<br />
+    bool destroyed;<br />
+    float destroyedTime;<br />
 }<br />
 
-public class CivillianStat<br />
+class CivillianStat<br />
 {<br />
-    public Vector3 position;<br />
-    public CIVILLIANTYPE type;<br />
-    public bool saved;<br />
-    public bool killed;<br />
-    public float savedKilledTime;<br />
+    Vector3 position;<br />
+    CIVILLIANTYPE type;<br />
+    bool saved;<br />
+    bool killed;<br />
+     float savedKilledTime;<br />
 }<br /><br />
 
-public class TNTStat<br />
+class TNTStat<br />
 {<br />
-    public Vector3 position;<br />
-    public float usedTime;<br />
+    Vector3 position;<br />
+    float usedTime;<br />
 }<br /><br />
 
-public class HealthStat<br />
+class HealthStat<br />
 {<br />
-    public float collectedTime;<br />
-    public float spawnTime;<br />
-    public bool collected;<br />
-    public Vector3 position;<br />
+    float collectedTime;<br />
+    float spawnTime;<br />
+    bool collected;<br />
+    Vector3 position;<br />
 }<br /><br />
 
-public class GameDataManager 
+class GameDataManager 
 - Player settings / statistics<br />
 playerName;<br />
 playerHealth;<br />
