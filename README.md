@@ -43,15 +43,19 @@ Female<br />
 2) Dropping TNT to destroy rock / crystal cubes – killing monsters<br />
 
 <br />
-# Firebase Data Collected:
-<br />
-- Global game data manager enums<br />
-enum GENDER { MALE = 0, FEMALE = 1 }<br />
-enum CVDCOLOURSCHEME { RED = 0, GREEN = 1, BLUE = 2, NONE = 3 }<br />
-enum FONTSIZE { SMALL = 0, MEDIUM = 1, LARGE = 2 }<br />
-enum CIVILLIANTYPE { MALE = 0, FEMALE = 1, CAT = 2 }<br />
 
-- Game stat classes<br /><br />
+# Firebase Data Collected:
+
+- Global game data manager enums<br />
+1) enum GENDER { MALE = 0, FEMALE = 1 }
+2) enum CVDCOLOURSCHEME { RED = 0, GREEN = 1, BLUE = 2, NONE = 3 }
+3) enum FONTSIZE { SMALL = 0, MEDIUM = 1, LARGE = 2 }
+4) enum CIVILLIANTYPE { MALE = 0, FEMALE = 1, CAT = 2 }
+5) enum MONSTERTYPE { BASIC, JUICY }
+
+
+- Game stat classes
+
 class ChestStat<br />
 {<br />
     float spawnTime;<br />
@@ -132,8 +136,7 @@ class HealthStat<br />
     Vector3 position;<br />
 }<br /><br />
 
-class GameDataManager 
-- Player settings / statistics<br />
+- Player settings / statistics
 playerName;<br />
 playerHealth;<br />
 playerScore;<br />
@@ -142,63 +145,63 @@ genderSelected;<br />
 List<Vector3> playerPositionsList;<br />
 List<TNTStat> playerTNTStatsList;<br />
 List<HealthStat> playerHealthPickupStatsList;<br />
-<br />
-- Accessability settings<br />
+
+- Accessability settings
 selectedFontSize;<br />
 selectedColourScheme;<br />
 selectedCVDColourScheme;<br />
-<br />
-- Grid cube counts<br />
+
+- Grid cube counts
 numberOfTotalCubes;<br />
 numberOfRockCubes;<br />
 numberOfCrystalCubes;<br />
 numberOfCubesDestroyed;<br />
 numberOfCubesDestroyedRock;<br />
 numberOfCubesDestroyedCrystal;<br />
-<br />
-- Pickup statistics<br />
+
+- Pickup statistics
 pickupsTotal;<br />
 pickupsCollected;<br />
-<br />
-- Chests statistics<br />
+
+- Chests statistics
 chestsTotal;<br />
 chestsOpened;<br />
 keysTotal;<br />
 keysCollected;<br />
-<br />
-- Monster statistics<br />
+
+- Monster statistics
 monstersTotal;<br />
 monstersBasic;<br />
 monstersJuicy;<br />
 monstersKilledTotal;<br />
 monstersKilledBasic;<br />
 monstersKilledJuicy;<br />
-<br />
-- Game statistics<br />
+
+- Game statistics
 string[] questNames;<br />
 questsNumber;<br />
 List<QuestStat> questStatsList;<br />
 questOldMinerPosition;<br />
-<br />
-- Civillian statistics<br />
+
+- Civillian statistics
 civillianType;<br />
 civillianStats;<br />
 civillianPosition;<br />
-<br />
-- Cube positional statistics<br />
+
+- Cube positional statistics
 List<CubeDestroyedStat> cubePositionsDestroyed;<br />
 List<CubeStat> cubePositionsStart;<br />
 List<CubeStat> cubePositionsEnd;<br />
-<br />
- - Monster positional statistics<br />
+
+ - Monster positional statistics
 List<MonsterStat> monsterKilledStatsBasicList;<br />
 List<MonsterStat> monsterKilledStatsJuicyList;<br />
-<br />
-- Objective positional statistics<br />
+
+- Objective positional statistics
 List<PickupStat> listPickupStats;<br />
 List<ChestStat> listChestStats;<br />
 List<KeyStat> listKeyStats;<br />
-<br />
+
 
 # Colour settings
 To modify colour settings the values sorted in the Colours C# file need to be modified.<br />
