@@ -1,6 +1,7 @@
 # CaveGame
 Procedurally generate cave adventure game created for the UROS project at University of Lincoln.
-(Web build may need rebuilding as one lib file was too lareg to commit to GitHub)
+<br />
+*(Web build may need rebuilding as one lib file was too large to commit to GitHub)*
 
 ## Game features:
 -	**Procedurally generated map / caves** <br />
