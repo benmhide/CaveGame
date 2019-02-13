@@ -12,7 +12,7 @@ Procedurally generate cave adventure game created for the UROS project at Univer
 2) Search for keys to open chests to collect artefacts<br />
 3) Kill monsters<br />
 4) Exit the caves (complete game)<br />
-Hidden quest) Save/kill civilian (male/female/cat)<br />
+5) Save/kill civilian either male/female/cat (hidden quest)<br />
 <br />  
   
 - **Selectable font sizes for in game text**<br />
@@ -57,25 +57,22 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
 ## Game stat classes
 
 - **class ChestStat**
-<br />
 {<br />
     float spawnTime;<br />
     float openedTime;<br />
     bool opened;<br />
     Vector3 position;<br />
-}<br /><br />
+}<br />
 
 - **class KeyStat**
-<br />
 {<br />
     float spawnTime;<br />
     float collectedTime;<br />
     bool collected;<br />
     Vector3 position;<br />
-}<br /><br />
+}<br />
 
 - **class PickupStat**
-<br />
 {<br />
     float spawnTime;<br />
     float collectedTime;<br />
@@ -84,16 +81,14 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
 }<br /><br />
 
 - **class QuestStat**
-<br />
 {<br />
     float startTime;<br />
     float endTime;<br />
     string name;<br />
     bool complete;<br />
-}<br /><br />
+}<br />
 
 - **class MonsterStat**
-<br />
 {<br />
     float spawnTime;<br />
     float killedTime;<br />
@@ -102,17 +97,15 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
     MONSTERTYPE type;<br />
     bool killed;<br />
     bool killedInQuest;<br />
-}<br /><br />
+}<br />
 
 - **class CubeStat**
-<br />
 {<br />
     Vector3 position;<br />
     CUBETYPE type;<br />
 }<br /><br />
 
 - **class CubeDestroyedStat**
-<br />
 {<br />
     Vector3 position;<br />
     CUBETYPE type;<br />
@@ -121,109 +114,95 @@ Hidden quest) Save/kill civilian (male/female/cat)<br />
 }<br />
 
 - **class CivillianStat**
-<br />
 {<br />
     Vector3 position;<br />
     CIVILLIANTYPE type;<br />
     bool saved;<br />
     bool killed;<br />
      float savedKilledTime;<br />
-}<br /><br />
+}<br />
 
 - **class TNTStat**
-<br />
 {<br />
     Vector3 position;<br />
     float usedTime;<br />
-}<br /><br />
+}<br />
 
 - **class HealthStat**
-<br />
 {<br />
     float collectedTime;<br />
     float spawnTime;<br />
     bool collected;<br />
     Vector3 position;<br />
-}<br /><br />
+}<br />
 
 ## Game statistics collected
 
 - **Player settings / statistics**
-<br />
-playerName;<br />
-playerHealth;<br />
-playerScore; (end of game)<br />
-genderInitial;<br />
-genderSelected;<br />
-List<Vector3> playerPositionsList;<br />
-List<TNTStat> playerTNTStatsList;<br />
-List<HealthStat> playerHealthPickupStatsList;<br />
+    - playerName;<br />
+    - playerHealth;<br />
+    - playerScore; (end of game)<br />
+    - genderInitial;<br />
+    - genderSelected;<br />
+    - List<Vector3> playerPositionsList;<br />
+    - List<TNTStat> playerTNTStatsList;<br />
+    - List<HealthStat> playerHealthPickupStatsList;<br /><br />
 
 - **Accessability settings**
-<br />
-selectedFontSize;<br />
-selectedColourScheme;<br />
-selectedCVDColourScheme;<br />
+    - selectedFontSize;<br />
+    - selectedColourScheme;<br />
+    - selectedCVDColourScheme;<br /><br />
 
 - **Grid cube counts**
-<br />
-numberOfTotalCubes;<br />
-numberOfRockCubes;<br />
-numberOfCrystalCubes;<br />
-numberOfCubesDestroyed;<br />
-numberOfCubesDestroyedRock;<br />
-numberOfCubesDestroyedCrystal;<br />
+    - numberOfTotalCubes;<br />
+    - numberOfRockCubes;<br />
+    - numberOfCrystalCubes;<br />
+    - numberOfCubesDestroyed;<br />
+    - numberOfCubesDestroyedRock;<br />
+    - numberOfCubesDestroyedCrystal;<br /><br />
 
 - **Pickup statistics**
-<br />
-pickupsTotal;<br />
-pickupsCollected;<br />
+    - pickupsTotal;<br />
+    - pickupsCollected;<br /><br />
 
 - **Chests statistics**
-<br />
-chestsTotal;<br />
-chestsOpened;<br />
-keysTotal;<br />
-keysCollected;<br />
+    - chestsTotal;<br />
+    - chestsOpened;<br />
+    - keysTotal;<br />
+    - keysCollected;<br /><br />
 
 - **Monster statistics**
-<br />
-monstersTotal;<br />
-monstersBasic;<br />
-monstersJuicy;<br />
-monstersKilledTotal;<br />
-monstersKilledBasic;<br />
-monstersKilledJuicy;<br />
+    - monstersTotal;<br />
+    - monstersBasic;<br />
+    - monstersJuicy;<br />
+    - monstersKilledTotal;<br />
+    - monstersKilledBasic;<br />
+    - monstersKilledJuicy;<br /><br />
 
 - **Game statistics**
-<br />
-string[] questNames;<br />
-questsNumber;<br />
-List<QuestStat> questStatsList;<br />
-questOldMinerPosition;<br />
+    - string[] questNames;<br />
+    - questsNumber;<br />
+    - List<QuestStat> questStatsList;<br />
+    - questOldMinerPosition;<br /><br />
 
 - **Civillian statistics**
-<br />
-civillianType;<br />
-civillianStats;<br />
-civillianPosition;<br />
+    - civillianType;<br />
+    - civillianStats;<br />
+    - civillianPosition;<br /><br />
 
 - **Cube positional statistics**
-<br />
-List<CubeDestroyedStat> cubePositionsDestroyed;<br />
-List<CubeStat> cubePositionsStart;<br />
-List<CubeStat> cubePositionsEnd;<br />
+    - List<CubeDestroyedStat> cubePositionsDestroyed;<br />
+    - List<CubeStat> cubePositionsStart;<br />
+    - List<CubeStat> cubePositionsEnd;<br /><br />
 
  - **Monster positional statistics**
- <br />
-List<MonsterStat> monsterKilledStatsBasicList;<br />
-List<MonsterStat> monsterKilledStatsJuicyList;<br />
+    - List<MonsterStat> monsterKilledStatsBasicList;<br />
+    - List<MonsterStat> monsterKilledStatsJuicyList;<br /><br />
 
 - **Objective positional statistics**
-<br />
-List<PickupStat> listPickupStats;<br />
-List<ChestStat> listChestStats;<br />
-List<KeyStat> listKeyStats;<br />
+    - List<PickupStat> listPickupStats;<br />
+    - List<ChestStat> listChestStats;<br />
+    - List<KeyStat> listKeyStats;<br /><br />
 
 
 # Colour settings
