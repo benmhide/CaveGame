@@ -214,4 +214,87 @@ The Colours C# file is located in:<br />
 
 Colours used in the game can be set for all colour blind settings and normal colour settings. Colours defined in this file will automatically be used during the game. The Unity colours used in this file are clearly named and should be easy to modify with any RGBA values.<br />
 
-Colours are as follows:
+**Colours are as follows:**
+- FLOOR COLOURS
+  - floorColour = new Color(191.0f / 255.0f, 171.0f / 225.0f, 133.0f / 255.0f); **SET NORMAL COLOUR**
+  - floorColourRedSafe = new Color(191.0f / 255.0f, 171.0f / 225.0f, 133.0f / 255.0f);
+  - floorColourGreenSafe = new Color(204.0f / 255.0f, 204.0f / 255.0f, 204.0f / 255.0f);
+  - floorColourBlueSafe = new Color(204.0f / 255.0f, 204.0f / 255.0f, 204.0f / 255.0f); 
+
+- EDGE COLOURS
+  - edgeColour = new Color(48.0f / 255.0f, 48.0f / 255.0f, 48.0f / 255.0f); **SET NORMAL COLOUR**
+  - edgeColourRedSafe = new Color(48.0f / 255.0f, 48.0f / 255.0f, 48.0f / 255.0f);
+  - edgeColourGreenSafe = new Color(45.0f / 255.0f, 31.0f / 255.0f, 0.0f / 255.0f);
+  - edgeColourBlueSafe = new Color(45.0f / 255.0f, 31.0f / 255.0f, 0.0f / 255.0f); 
+
+- BORDER COLOURS
+  - borderColour = new Color(edgeColour.r, edgeColour.g, edgeColour.b); **COPIED FROM ABOVE**
+  - borderColourRedSafe = new Color(edgeColourRedSafe.r, edgeColourRedSafe.g, edgeColourRedSafe.b);
+  - borderColourGreenSafe = new Color(edgeColourGreenSafe.r, edgeColourGreenSafe.g, edgeColourGreenSafe.b);
+  - borderColourBlueSafe = new Color(edgeColourBlueSafe.r, edgeColourBlueSafe.g, edgeColourBlueSafe.b);
+
+- ROCK COLOURS
+  - rockColour = new Color(117.0f / 255.0f, 95.0f / 255.0f, 43.0f / 255.0f); **SET NORMAL COLOUR**
+  - rockColourRedSafe = new Color(117.0f / 255.0f, 95.0f / 255.0f, 43.0f / 255.0f);
+  - rockColourGreenSafe = new Color(61.0f / 255.0f, 61.0f / 255.0f, 61.0f / 255.0f);
+  - rockColourBlueSafe = new Color(61.0f / 255.0f, 61.0f / 255.0f, 61.0f / 255.0f);
+
+- ROCK DAMAGED COLOURS
+  - rockDamagedColour = new Color(181.0f / 255.0f, 151.0f / 255.0f, 83.0f / 255.0f); **SET NORMAL COLOUR**
+  - rockDamagedColourRedSafe = new Color(181.0f / 255.0f, 151.0f / 255.0f, 83.0f / 255.0f);
+  - rockDamagedColourGreenSafe = new Color(132.0f / 255.0f, 132.0f / 255.0f, 132.0f / 255.0f);
+  - rockDamagedColourBlueSafe = new Color(132.0f / 255.0f, 132.0f / 255.0f, 132.0f / 255.0f); //
+
+- ROCK DAMAGED PARTICLE SYSTEM COLOURS
+  - rockDamagedPSColour = new Color(rockColour.r, rockColour.g, rockColour.b); **COPIED FROM ABOVE**
+  - rockDamagedPSColourRedSafe = new Color(rockColourRedSafe.r, rockColourRedSafe.g, rockColourRedSafe.b);
+  - rockDamagedPSColourGreenSafe = new Color(rockColourGreenSafe.r, rockColourGreenSafe.g, rockColourGreenSafe.b);
+  - rockDamagedPSColourBlueSafe = new Color(rockColourBlueSafe.r, rockColourBlueSafe.g, rockColourBlueSafe.b);
+
+- CRYSTAL COLOURS
+  - crystalColour = new Color(0.0f / 255.0f, 255.0f / 255.0f, 229.0f / 255.0f); **SET NORMAL COLOUR**
+  - crystalColourRedSafe = new Color(0.0f / 255.0f, 255.0f / 255.0f, 229.0f / 255.0f);
+  - crystalColourGreenSafe = new Color(191.0f / 255.0f, 0.0f / 255.0f, 255.0f / 255.0f);
+  - crystalColourBlueSafe = new Color(191.0f / 255.0f, 0.0f / 255.0f, 255.0f / 255.0f); //
+
+- CRYSTAL DAMGED PARTICLE SYSTEM COLOURS
+  - crystalDamagedPSColour = new Color(crystalColour.r, crystalColour.g, crystalColour.b); **COPIED FROM ABOVE**
+  - crystalDamagedPSColourRedSafe = new Color(crystalColourRedSafe.r, crystalColourRedSafe.g, crystalColourRedSafe.b);
+  - crystalDamagedPSColourGreenSafe = new Color(crystalColourGreenSafe.r, crystalColourGreenSafe.g, crystalColourGreenSafe.b);
+  - crystalDamagedPSColourBlueSafe = new Color(crystalColourBlueSafe.r, crystalColourBlueSafe.g, crystalColourBlueSafe.b);
+
+- PICK UP COLOURS
+  - pickUpColour = new Color(255.0f / 255.0f, 215.0f / 255.0f, 0.0f / 255.0f); **SET NORMAL COLOUR**
+  - pickUpColourRedSafe = new Color(255.0f / 255.0f, 215.0f / 255.0f, 0.0f / 255.0f);
+  - pickUpColourGreenSafe = new Color(218.0f / 255.0f, 165.0f / 255.0f, 32.0f / 255.0f);
+  - pickUpColourBlueSafe = new Color(218.0f / 255.0f, 165.0f / 255.0f, 32.0f / 255.0f); //
+
+- BASIC MONSTER COLOURS
+  - basicMonColour = new Color(226.0f / 255.0f, 0.0f / 255.0f, 0.0f / 255.0f); **SET NORMAL COLOUR**
+  - basicMonColourRedSafe = new Color(226.0f / 255.0f, 0.0f / 255.0f, 0.0f / 255.0f);
+  - basicMonColourGreenSafe = new Color(87.0f / 255.0f, 155.0f / 255.0f, 0.0f / 255.0f);
+  - basicMonColourBlueSafe = new Color(87.0f / 255.0f, 155.0f / 255.0f, 0.0f / 255.0f); //
+
+- JUICY MONSTER COLOURS
+  - juicyMonColour = new Color(87.0f / 255.0f, 155.0f / 255.0f, 0.0f / 255.0f); **SET NORMAL COLOUR**
+  - juicyMonColourRedSafe = new Color(87.0f / 255.0f, 155.0f / 255.0f, 0.0f / 255.0f);
+  - juicyMonColourGreenSafe = new Color(226.0f / 255.0f, 0.0f / 255.0f, 0.0f / 255.0f);
+  - juicyMonColourBlueSafe = new Color(226.0f / 255.0f, 0.0f / 255.0f, 0.0f / 255.0f); //
+
+- Chest and key colours - NORMAL VISION
+  - chestKeyColours = new Color[] { Color.red, Color.green, Color.blue, Color.yellow, Color.magenta, Color.cyan }; **SET NORMAL COLOUR**
+  - chestKeyColoursRedSafe = new Color[] { Color.red, Color.green, Color.blue, Color.yellow, Color.magenta, Color.cyan }; //
+  - chestKeyColoursGreenSafe = new Color[] { Color.red, Color.green, Color.blue, Color.yellow, Color.magenta, Color.cyan }; //
+  - chestKeyColoursBlueSafe = new Color[] { Color.red, Color.green, Color.blue, Color.yellow, Color.magenta, Color.cyan }; //
+
+- UI COLOURS
+  - UITextColour = new Color(255.0f / 255.0f, 254.0f / 255.0f, 239.0f / 255.0f); **COPIED FROM ABOVE**
+  - UITextColourRedSafe = new Color(255.0f / 255.0f, 254.0f / 255.0f, 239.0f / 255.0f);
+  - UITextColourGreenSafe = new Color(255.0f / 255.0f, 188.0f / 255.0f, 204.0f / 255.0f);
+  - UITextColourBlueSafe = new Color(255.0f / 255.0f, 188.0f / 255.0f, 204.0f / 255.0f); //
+
+- UI BACKGROUND COLOURS
+  - UIBackgroundColour = new Color(33.0f / 255.0f, 22.0f / 255.0f, 0.0f / 255.0f); **SET NORMAL COLOUR**
+  - UIBackgroundColourRedSafe = new Color(33.0f / 255.0f, 22.0f / 255.0f, 0.0f / 255.0f);
+  - UIBackgroundColourGreenSafe = new Color(9.0f / 255.0f, 0.0f / 255.0f, 56.0f / 255.0f);
+  - UIBackgroundColourBlueSafe = new Color(9.0f / 255.0f, 0.0f / 255.0f, 56.0f / 255.0f); //
