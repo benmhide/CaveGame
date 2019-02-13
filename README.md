@@ -1,9 +1,6 @@
 # CaveGame
 Procedurally generate cave adventure game created for the UROS project at University of Lincoln.
 
-## Colours need to be set in the Colours.cs file inside the assets folder before the game will work with all colour settings. In its current state the colour blind settings won't work and will crash the game. Once all the colours inside this Colours.cs file are completed the game needs to be rebuilt - NO OTHER SETTINGS SHOULD NEED CHANGING JUST A NEW BUILD OF THE GAME. See below for further details.
-
-
 ## Game features:
 -	**Procedurally generated map / caves** <br />
 1) Rock cubes – less juicy / fewer hits to destroy <br />
